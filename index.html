@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>DJANGO</title>
+  <link href="https://fonts.googleapis.com/css?family=PT Serif" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          DJANGO
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+          
+         <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+            <a href="https://fitgirlrepacks.co"><img src="images/new images/logos/steam.png" ></a>
+
+            </div>
+
+            <div class="subtitle">PC GAMES</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              
+
+              <a href="https://www1.swatchseries.to"><img src="images/new images/logos/netflix.png" alt=""></a>
+
+
+            </div>
+
+            <div class="subtitle">TV SERIES</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+               <a href="https://yts.mx"> <img src="new images/logos/cinema.png" alt=""></a>
+
+
+
+            </div>
+
+            <div class="subtitle">MOVIES</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+               <a href="https://www.whatshouldireadnext.com"> <img src="images/new images/logos/book.png" alt=""></a>
+
+            </div>
+
+            <div class="subtitle">BOOKS</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+          <a href="https://www.last.fm"> <img src="new images/logos/music.png" alt=""></a>
+            </div>
+
+            <div class="subtitle">SONGS</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+               <a href="https://arstechnica.com"> <img src="images/new images/logos/tech.png" alt=""></a>
+
+            </div>
+
+            <div class="subtitle">TECH</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <a href="https://artbox.nl"> <img src="images/new images/logos/art.png" alt=""></a>
+
+            </div>
+
+            <div class="subtitle">ART</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+
+             <a href="https://www.reddit.com/r/conspiracytheories"> <img src="images/new images/logos/illu.png" alt=""></a>
+            </div>
+
+            <div class="subtitle">CONSPIRACY THEORIES</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
+          <div class="img-text-wrapper">
+            <div class="logo-wrapper">
+              <a href="https://sports.yahoo.com"> <img src="images/new images/logos/sports.png" alt=""></a>
+
+            </div>
+
+            <div class="subtitle">SPORTS</div>
+          </div>
+        </div>
+
+       
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
